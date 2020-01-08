@@ -1,0 +1,261 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+#root{
+  height: 100%;
+}
+.App {
+  text-align: center;
+  padding: 0 10px;
+  min-width: 615px;
+}
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+/* 卡片 */
+.Card-container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex-wrap: nowrap;
+  margin-bottom: 30px;
+}
+.Cardrow{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 264px;
+  margin-bottom: 14px;
+}
+.Card{
+  width: 100%;
+  height: 264px;
+  margin:  7px;
+  position: relative;
+  border: 1px #0546bd solid;
+  -moz-box-shadow:5px 3px 6px #757575; 
+  -webkit-box-shadow:5px 3px 6px #757575;
+   box-shadow:5px 3px 6px #757575;
+}
+.Card-logo{
+  width: 46px;
+  height: 53px;
+  position: absolute;
+  margin: 0 auto;
+  top: 22px;
+  right: 0;
+  left: 0;
+}
+.Card-contentbox{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 102px;
+  width: 100%;
+  font-size: 15px;
+
+}
+.Card-title{
+  text-align: center;
+  margin: 0 auto;
+  font-size: 15px;
+    font-family: "Source Han Sans CN";
+    color: rgb( 0, 0, 0 );
+    line-height: 1.6;
+  font-weight: 600;
+
+}
+.Card-content{
+  text-align: center;
+  margin: 0 auto;
+  overflow-wrap: break-word;
+  width: 80%;
+  height: 100px;
+  text-overflow:ellipsis;
+  font-weight: 545;
+}
+
+.Card-sumary{
+  text-align: center;
+  position: absolute; 
+  bottom: 17px;
+  right: 0;
+  left: 0;
+  color: #2c47c2;
+  font-weight: 550;
+  font-size: 15px;
+  cursor: pointer;
+  width:fit-content;
+  width:-webkit-fit-content;
+  width:-moz-fit-content;
+  margin: 0 auto;
+}
+.Card-sumary div{
+  width:fit-content;
+width:-webkit-fit-content;
+width:-moz-fit-content;
+}
+
+/* 菜单栏 */
+.Nav{
+  height: 45px;
+  background-color: rgb(15,132,196);
+  display: flex;
+  margin: 0 7px;
+}
+.Navv{
+  line-height: 45px;
+  width: 200px;
+  /* background-color: rgb(15,132,196); */
+  color: white;
+  border-right: 0.5px solid white;
+  /* border-left: 0.5px solid white; */
+  cursor: pointer;
+  /* margin: 0 10px; */
+}
+.Nav-son{
+
+  height: 100%;
+    line-height: 45px;
+    width: 160px;
+    /* background-color: rgb(165, 196, 155); */
+    color: white;
+    cursor: pointer;
+    margin: 0 20px;
+}
+.Active{
+  height: 100%;
+  line-height: 37px;
+  /* width: 200px; */
+  background-color: white;
+  color: rgb( 102, 102, 102  );
+  /* border: 0.5px solid grey; */
+  margin-top: 4px;
+  font-weight: 549.5;
+}
+
+
+.QArow{
+  padding: 15px 10px;
+  /* max-width:; */
+  text-align: left;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+}
+.Question{
+    padding-top:20px;
+    height: 25px;
+    text-align: left;
+    font-weight: 800;
+    line-height: 25px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+}
+.Answer{
+  height: 25px;
+  text-align: left;
+  line-height: 25px;
+  font-weight: 500;
+  font-size: 17px;
+  padding-top: 10px;
+
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+}
+/* 弹窗*/
+.pc_msk{
+  width:100%;
+  height:100%;
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:1;
+  /* background: rgba(98, 103, 105, 0.342) */
+}
+.modal_box{
+  position:absolute;
+  left:50%;
+  top:20%;
+  transform: translate(-50%, -50%);   
+  -webkit-transform: translate(-50%, -50%);
+  min-height: 230px;
+  min-width: 350px;
+  background: #ffffff;
+  z-index: 8;
+  border: 1px grey solid;
+  box-shadow: 5px 3px 6px #757575;
+}
+.title{
+  height: 40px;
+  line-height: 40px;
+  font-weight: 400;
+  font-size: 16px;
+  padding: 0 20px;
+  border-bottom: 1px solid #e6e6e6;
+}
+.pc_close_btn{
+  float: right;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  margin-right: -15px;
+  cursor: pointer;
+  background: url(./images/service_icon.png) -5px -355px no-repeat;
+}
+.net_inputBox{
+  margin: 20px;
+}
+.net_input{
+  width: 88%;
+  height: 40px;
+  border: 1px solid #cbcbcb;
+  padding: 0 15px;
+  border-radius: 3px;
+}
+.net_btn{
+  margin-top: 5px;
+  width: 100%;
+  height: 50px;
+  background-color: #0385ed;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  font-size: 20px;
+}
+ul li {
+  list-style: none;
+}
+.wxcode{
+  position: absolute;
+  display: none;
+  width: 50px;
+  height: 55px;
+  top: 0px;
+  background: url(./images/wxcode.png) no-repeat;
+  background-size: cover;
+}
+.img-hover:hover .wxcode{
+   display: block;
+}

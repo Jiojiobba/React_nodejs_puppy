@@ -1,0 +1,441 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+p{
+    margin: 0;
+    padding: 0;
+}
+
+/* 颜色 */
+
+.green {
+    background-color: rgb(152, 200, 62);
+}
+
+.blue {
+    background-color: rgb(71, 172, 220);
+}
+
+.deepblue {
+    background-color: rgb(1, 134, 235);
+}
+/* 联系我们 */
+
+.contact-container{
+    background-color: #fafafa;
+    width: 100%;
+    height: fit-content;
+}
+.contact-container .header {
+    height: 120px;
+    width: 100%;
+    background-image: url(http://download.sangfor.com.cn/Source/default/20181116/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    text-align: center;
+    color: white;
+    padding: 30px 15px 0 15px;
+}
+
+.contact-container .header {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.76);
+}
+
+.contact-container .header>:first-child {
+    font-size: 30px;
+    color: white;
+}
+
+.contact-container .content {
+    padding: 15px 15px;
+    color: black;
+    border-radius: 35px;
+}
+.contact-container .Card1box,
+.contact-container .Card2box,
+.contact-container .Card3box{
+    margin-bottom: 20px;
+}
+
+.contact-container .card1,.contact-container .card3,.contact-container .card2 {
+    width: 98%;
+    height: fit-content;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    /* border: 1px solid #8080803d; */
+    color: rgb(87, 87, 87);
+    /* box-shadow: 1px 1px 0px #8080803d; */
+}
+.contact-container .card2 {
+    background-color:#f7f7f7;
+}
+.contact-container .card3 {
+    background-color:#f7f7f7;
+    margin: 20px 0;
+}
+.smallcard{
+    background-color: white;
+}
+
+.contact-container  .Card1box .title,
+.contact-container  .Card2box .title,
+.contact-container  .Card3box .title{
+    color: black;
+    font-weight: 600;
+    font-size: 22px;
+    text-align: left;
+    height: 30px;
+    margin: 10px 6px 8px 0px;
+    padding: 0;
+    line-height: 30px;
+    display: flex;
+    border: none;
+}
+.contact-container  .Card1box .title .titleleft,
+.contact-container  .Card2box .title .titleleft,
+.contact-container  .Card3box .title .titleleft{
+    background-color: black;
+    height: 17px;
+    margin: 8px 10px 0px 0;
+    width: 4px;
+    display: inline-block;
+}
+
+.Card1box .txt,
+.Card2box .txt,
+.Card3box .txt{
+    color: #666;
+    font-size: 10px;
+    margin: 0 25px;
+    opacity: 0.9;
+}
+.Card1box .txt li,
+.Card2box .txt li,
+.Card3box .txt li{
+    text-align: left;
+}
+.Card1box .smallcard{
+    height: fit-content;
+    width: 90%;
+    padding: 5px 15px 0 15px;
+    margin: 10px auto;
+    border-radius: 5px;
+    border: 1px solid #8080803d;
+    color: rgb(87, 87, 87);
+}
+.Card2box .smallcard{
+    display: flex;
+    width: 90%;
+    flex-direction: row;
+    /* background-color: white; */
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #8080803d;
+    align-items: center;
+    justify-content: center;
+    color: rgb(87, 87, 87);
+}
+.Card3box .smallcard{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    flex-direction: row;
+    /* background-color: white; */
+    align-items: center;
+    justify-content: space-evenly;
+    color: rgb(87, 87, 87);
+    background-color: #fafafa;
+}
+.Card2box .smallcard .small-img,
+.Card3box .smallcard .small-img
+{
+    width: 45px;
+    height: 45px;
+    margin: 0 0;
+}
+.smallcard .small-img img{
+    width: 45px;
+    height: 45px;
+}
+.Card2box .smallcard .small-txt{
+    width: 228px;
+    height: fit-content;
+    font-size: 13px;
+    line-height: 30px;
+    margin: 0 0 0 10px ;
+    text-align: center;
+}
+.Card1box .card1 .smallcard .title{
+    text-align: center;
+    width: fit-content;
+    margin: 10px auto;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.Card1box .card1 .smallcard .txt{
+    text-align: left;
+    width: 100%;
+    line-height: 20px;
+    margin-left: 0;
+}
+.Card1box .card1 .smallcard .button{
+    height: 33px;
+    width: 170px;
+    line-height: 33px;
+    margin: 0 auto;
+    background-color: #1f313c;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.Card1box .card1 .smallcard  .other{
+    color: #1f313c;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 33px;
+    margin: 10px 0px;
+}
+.Card1box .card1 .smallcard .txt span{
+    color: #1f313c;
+    font-weight: bold;
+}
+
+.card2 .smallcard .small-txt .font-15{
+    font-size: 15x;
+    text-align: center;
+}
+
+.card2 .smallcard .small-txt .span-big{
+    font-size: 15px;
+    color: #1f313c;
+    font-weight: bold;
+    text-align: center;
+}
+.card2 .smallcard .small-txt .button{
+    background-color: #1f313c;
+    color: white;
+    width: 150px;
+    margin: 10px auto;
+    
+}
+
+/* 弹窗*/
+.msk{
+    width:100%;
+    height:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:999;
+    overflow: scroll;
+    background-color: #feffe9;
+  }
+  
+  .msk li{
+      list-style: none;
+      list-style: none;
+      margin: 10px 10px;
+      border: 1px grey solid;
+      border-radius: 5px;
+      padding: 10px;
+  }
+  .mskcontent{
+      height: 100%;
+      overflow: scroll;
+  }
+  .close_btn{
+    float: right;
+    position: fixed;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    margin-right: 14px;
+    margin-top: 14px;
+    cursor: pointer;
+    /* background: url(../images/service_icon.png)100% 100% no-repeat; */
+    background: url(../images/close.png) no-repeat center;
+
+    /* background: url(../images/close_icon.png)-20px -345px no-repeat; */
+    /* background: url(../images/service_icon.png) -5px -355px no-repeat; */
+
+  }
+
+
+
+/* 如何购买 */
+
+.buy-container {
+    background-color: #fafafa;
+    width: 100%;
+    height: 100%;
+}
+
+.buy-container .header {
+    height: 200px;
+    width: 100%;
+    background-image: url(http://download.sangfor.com.cn/Source/default/20181116/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    text-align: center;
+    color: white;
+    padding: 30px 15px 0 15px;
+}
+
+.buy-container .header {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.76);
+    overflow: scroll;
+}
+
+.buy-container .header>:first-child {
+    font-size: 30px;
+    color: white;
+}
+
+.buy-container .header>:nth-child(2) {
+    color: white;
+    margin-top: 20px;
+    line-height: 25px;
+    opacity: 0.93;
+}
+
+.buy-container .header .tip {
+    height: 20px;
+    width: fit-content;
+    line-height: 12px;
+    font-size: 12px;
+    margin: 0 auto;
+    margin-top: 27px;
+    color: rgba(255, 255, 255, 0.76);
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    opacity: 0.8;
+}
+
+.buy-container .header .tip>:first-child {
+    line-height: 18px;
+    margin: 0 3px;
+    margin-top: 5px;
+}
+
+.buy-container .header .tip span {
+    color: white;
+}
+
+.buy-container .header .tip .tip-button {
+    font-size: 15px;
+    height: 18px;
+    line-height: 18px;
+    border-radius: 3px;
+    margin-top: 5px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+/* 卡片 */
+
+.buy-container .content {
+    margin: 15px 15px;
+    /* background-color: white; */
+    color: black;
+    border-radius: 35px;
+}
+
+.buy-container .content .card {
+    width: 98%;
+    height: 180px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    border: 1px solid #8080803d;
+    color: rgb(87, 87, 87);
+    /* -moz-box-shadow:9px 9px 0px #9E9E9E;
+       -webkit-box-shadow:9px 9px 0px #9E9E9E;
+        box-shadow:9px 9px 0px #9E9E9E; */
+    box-shadow: 1px 1px 0px #8080803d;
+}
+
+.content .card .title {
+    font-size: 20px;
+    margin: 0 auto;
+    width: fit-content;
+    color: black;
+    font-weight: 600;
+}
+.content .card .txt {
+    margin-top: 8px;
+    text-align: left;
+    margin-left: 20px;
+}
+.content .txt-span{
+    color: #1f313c;
+    font-weight: bold;
+}
+.content .card .buttonbox{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin-top: 25px;
+}
+.content .card .buttonbox .button {
+    height: 33px;
+    width: 200px;
+    line-height: 33px;
+    margin: 0 auto;
+    background-color: #1f313c;
+    /* background-color: rgb(14, 76, 148); */
+    color: white;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+}
+.content .card .other{
+    color: #1f313c;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+}
+.buy-container .header{
+    overflow: hidden;
+}
+@media screen and (max-width: 325px) {
+    .buy-container .header .tip {
+        margin-top: 15px;
+    }
+    .buy-container .header .tip>:first-child{
+        margin: 0 auto;
+        text-align: left;
+        width: 175px;
+
+    }
+    .buy-container .header .tip .tip-button{
+        line-height: 45px;
+        margin-left: -49px;
+    }
+    .buy-container .content{
+        margin: 15px 5px;
+    }
+    .content .card .txt{
+        margin-left: 10px;
+    }
+}
